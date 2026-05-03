@@ -1,0 +1,117 @@
+name: Update README stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 8 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-readme-stats
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compute stats and patch README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LOGIN: subkoks
+        run: |
+          set -euo pipefail
+
+          api() {
+            curl -fsSL \
+              -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "$@"
+          }
+
+          user_json=$(api "https://api.github.com/users/${LOGIN}")
+          public_repos=$(python3 - <<'PY' <<<"${user_json}"
+import json,sys
+u=json.load(sys.stdin)
+print(u["public_repos"])
+PY
+)
+
+          created_at=$(python3 - <<'PY' <<<"${user_json}"
+import json,sys
+u=json.load(sys.stdin)
+print(u["created_at"])
+PY
+)
+
+          year=$(date -u +%Y)
+          now=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          from_date="${year}-01-01T00:00:00Z"
+
+          gql_payload=$(python3 - <<PY
+import json
+print(json.dumps({
+  "query": """query($login:String!,$from:DateTime!,$to:DateTime!){
+    user(login:$login){
+      contributionsCollection(from:$from,to:$to){
+        contributionCalendar{ totalContributions }
+      }
+    }
+  }""",
+  "variables": {
+    "login": "${LOGIN}",
+    "from": "${from_date}",
+    "to": "${now}"
+  }
+}))
+PY
+)
+
+          gql_json=$(api -X POST "https://api.github.com/graphql" -d "${gql_payload}")
+          contrib=$(python3 - <<'PY' <<<"${gql_json}"
+import json,sys
+j=json.load(sys.stdin)
+print(j["data"]["user"]["contributionsCollection"]["contributionCalendar"]["totalContributions"])
+PY
+)
+
+          joined_years=$(python3 - <<'PY' <<<"${created_at}"
+import datetime,sys
+s=sys.stdin.read().strip()
+created=datetime.datetime.fromisoformat(s.replace('Z','+00:00'))
+now=datetime.datetime.now(datetime.timezone.utc)
+print(int(round((now-created).days/365.2425)))
+PY
+)
+
+          contrib_line="- **${contrib} contributions in ${year}** (GitHub contributions calendar total from **${year}-01-01 → now**)"
+          repos_line="- **${public_repos} public repositories**"
+          joined_line="- **Joined GitHub ${joined_years} years ago** (since **${created_at:0:10}**)"
+
+          tmp=$(mktemp)
+          perl -0777 -pe \
+            's/^- STATS_CONTRIBUTIONS_YTD_LINE\R/${contrib_line}\n/m; s/^- STATS_PUBLIC_REPOS_LINE\R/${repos_line}\n/m; s/^- STATS_JOINED_GITHUB_LINE\R/${joined_line}\n/m;' \
+            README.md > "${tmp}"
+          mv "${tmp}" README.md
+
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then
+            echo "No README changes"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+          git commit -m "chore(about-me): refresh README stats [skip ci]"
+          git push
