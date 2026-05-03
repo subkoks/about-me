@@ -10,9 +10,9 @@ This repo is a dedicated **About** page (your GitHub profile README still lives 
 
 ### Stats
 
-- STATS_CONTRIBUTIONS_YTD_LINE
-- STATS_PUBLIC_REPOS_LINE
-- STATS_JOINED_GITHUB_LINE
+- **397 contributions in 2026** (GitHub contributions calendar total from **2026-01-01 → now**)
+- **6 public repositories**
+- **Joined GitHub 6 years ago** (since **2020-04-24**)
 
 > Auto-updated daily via GitHub Actions in this repository.
 
