@@ -64,7 +64,7 @@ jobs:
           tmp=$(mktemp)
           CONTRIB_LINE="${contrib_line}" REPOS_LINE="${repos_line}" JOINED_LINE="${joined_line}" \
             perl -0777 -pe \
-              's/^- STATS_CONTRIBUTIONS_YTD_LINE\R/$ENV{CONTRIB_LINE}\n/m; s/^- STATS_PUBLIC_REPOS_LINE\R/$ENV{REPOS_LINE}\n/m; s/^- STATS_JOINED_GITHUB_LINE\R/$ENV{JOINED_LINE}\n/m;' \
+              's/^(- STATS_CONTRIBUTIONS_YTD_LINE|- \*\*\d+ contributions in[^\n]*)\R/$ENV{CONTRIB_LINE}\n/m; s/^(- STATS_PUBLIC_REPOS_LINE|- \*\*\d+ public repositories[^\n]*)\R/$ENV{REPOS_LINE}\n/m; s/^(- STATS_JOINED_GITHUB_LINE|- \*\*Joined GitHub[^\n]*)\R/$ENV{JOINED_LINE}\n/m;' \
               README.md > "${tmp}"
           mv "${tmp}" README.md
 
