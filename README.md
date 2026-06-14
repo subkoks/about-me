@@ -22,9 +22,25 @@ The full profile README lives at [`subkoks/subkoks`](https://github.com/subkoks/
 
 ## What I'm building
 
-- **[agents-md](https://github.com/subkoks/agents-md)** — Cross-editor agent rules on the GOTCHA framework with a Solana / web3 skill pack.
+**AI coding agents & infra**
+
+- **[agents-md](https://github.com/subkoks/agents-md)** — Cross-editor agent OS on the GOTCHA framework with a Solana / web3 skill pack and `make install-*` flows.
 - **[BSELA](https://github.com/subkoks/BEST-Self-Enhancement-Learning-AI)** — Local control plane that learns from coding-AI sessions and proposes `AGENTS.md` updates.
-- **Solana experiments** — Trading, scanners, and on-chain automation; repos appear here as they go public.
+
+**Security & agent defense**
+
+- **[hacker-agent](https://github.com/subkoks/hacker-agent)** — Permanent-memory security research toolkit: CVE / CISA KEV feeds, audit checklists, Ghidra MCP bridge.
+- **[blackterminal-security](https://github.com/subkoks/blackterminal-security)** — Security-engineer skill for AI agents: OWASP Top 10, CWE Top 25, secrets detection.
+- **[prompt-injection-security](https://github.com/subkoks/prompt-injection-security)** — Prompt-injection defense for agent workflows: skeptical-reading skill, offline scanner.
+
+**Solana & web3**
+
+- **[SolanaIdeasLab](https://github.com/subkoks/SolanaIdeasLab)** — Market research, architecture, and master plan, with bots/scanners in **[SolanaIdeasLab-projects](https://github.com/subkoks/SolanaIdeasLab-projects)**.
+
+**Automation & tools**
+
+- **[apple-all-schematic](https://github.com/subkoks/apple-all-schematic)** — Bulk Apple schematic / boardview downloader from free Telegram channels (Telethon).
+- **[stake-mirrors-ping](https://github.com/subkoks/stake-mirrors-ping)** — Fastest Stake.com mirror + optimal NordVPN region for lowest latency.
 
 ## Focus
 
