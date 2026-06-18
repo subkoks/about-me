@@ -8,3 +8,7 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Claude Code (commit shared settings; ignore machine-local perms + transcripts)
+.claude/*
+!.claude/settings.json
