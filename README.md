@@ -50,3 +50,15 @@ Coding agents · local automation · Solana analytics and trading tooling · har
 
 - Profile README: [`subkoks/subkoks`](https://github.com/subkoks/subkoks)
 - X / Twitter: [@Subkoks](https://x.com/Subkoks)
+
+## Codex CLI
+
+Codex CLI can use this repo's root `AGENTS.md` and `.codex/config.toml` for the same workspace guidance.
+
+Recommended entrypoint:
+
+```bash
+cd ~/Projects/Current/Active/about-me
+codex
+> Read AGENTS.md and CLAUDE.md before making changes.
+```
