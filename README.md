@@ -13,12 +13,9 @@ The full profile README lives at [`subkoks/subkoks`](https://github.com/subkoks/
 
 ## Coding activity
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://ghchart.rshah.org/238636/subkoks">
-  <img alt="GitHub contribution graph for @subkoks" src="https://ghchart.rshah.org/238636/subkoks">
-</picture>
+<img alt="Contribution activity for @subkoks — orange on black" src="https://raw.githubusercontent.com/subkoks/subkoks/activity/activity.svg" width="100%">
 
-<!-- Fallback if ghchart breaks: https://streak-stats.demolab.com/?user=subkoks&theme=dark&hide_border=true -->
+<!-- Generated in subkoks/subkoks by scripts/contrib_heatmap.py, published to its activity branch. Live fallback: https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=subkoks&theme=gruvbox&bg_color=000000&title_color=FF7F0E&icon_color=FF7F0E&text_color=E6E6E6 -->
 
 ## What I'm building
 
