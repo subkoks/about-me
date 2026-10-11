@@ -2,22 +2,22 @@
 
 The full profile README lives at [`subkoks/subkoks`](https://github.com/subkoks/subkoks). This repo is the long-form **about** page — stack, links, and context that doesn't belong on the front page.
 
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![Solana](https://img.shields.io/badge/-Solana-9945FF?style=flat-square&logo=solana&logoColor=white)
-![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![macOS](https://img.shields.io/badge/-macOS-000000?style=flat-square&logo=apple&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-1F1F1F?style=flat-square&logo=python&logoColor=FF7F0E)
+![TypeScript](https://img.shields.io/badge/-TypeScript-1F1F1F?style=flat-square&logo=typescript&logoColor=FF7F0E)
+![Node.js](https://img.shields.io/badge/-Node.js-1F1F1F?style=flat-square&logo=node.js&logoColor=FF7F0E)
+![Solana](https://img.shields.io/badge/-Solana-1F1F1F?style=flat-square&logo=solana&logoColor=FF7F0E)
+![Bash](https://img.shields.io/badge/-Bash-1F1F1F?style=flat-square&logo=gnubash&logoColor=FF7F0E)
+![macOS](https://img.shields.io/badge/-macOS-1F1F1F?style=flat-square&logo=apple&logoColor=FF7F0E)
+![Linux](https://img.shields.io/badge/-Linux-1F1F1F?style=flat-square&logo=linux&logoColor=FF7F0E)
+![Git](https://img.shields.io/badge/-Git-1F1F1F?style=flat-square&logo=git&logoColor=FF7F0E)
 
-## Coding activity
+<h2><img alt="Coding activity" src="https://raw.githubusercontent.com/subkoks/subkoks/main/assets/labels/coding-activity.svg"></h2>
 
 <img alt="Contribution activity for @subkoks — orange on black" src="https://raw.githubusercontent.com/subkoks/subkoks/activity/activity.svg" width="100%">
 
 <!-- Generated in subkoks/subkoks by scripts/contrib_heatmap.py, published to its activity branch. Live fallback: https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=subkoks&theme=gruvbox&bg_color=000000&title_color=FF7F0E&icon_color=FF7F0E&text_color=E6E6E6 -->
 
-## What I'm building
+<h2><img alt="What I'm building" src="https://raw.githubusercontent.com/subkoks/subkoks/main/assets/labels/what-im-building.svg"></h2>
 
 **AI coding agents & infra**
 
@@ -39,16 +39,16 @@ The full profile README lives at [`subkoks/subkoks`](https://github.com/subkoks/
 - **[apple-all-schematic](https://github.com/subkoks/apple-all-schematic)** — Bulk Apple schematic / boardview downloader from free Telegram channels (Telethon).
 - **[stake-mirrors-ping](https://github.com/subkoks/stake-mirrors-ping)** — Fastest Stake.com mirror + optimal NordVPN region for lowest latency.
 
-## Focus
+<h2><img alt="Focus" src="https://raw.githubusercontent.com/subkoks/subkoks/main/assets/labels/focus.svg"></h2>
 
 Coding agents · local automation · Solana analytics and trading tooling · hardware reverse-engineering and micro-soldering workflows.
 
-## Links
+<h2><img alt="Links" src="https://raw.githubusercontent.com/subkoks/subkoks/main/assets/labels/links.svg"></h2>
 
 - Profile README: [`subkoks/subkoks`](https://github.com/subkoks/subkoks)
 - X / Twitter: [@Subkoks](https://x.com/Subkoks)
 
-## Codex CLI
+<h2><img alt="Codex CLI" src="https://raw.githubusercontent.com/subkoks/subkoks/main/assets/labels/codex-cli.svg"></h2>
 
 Codex CLI can use this repo's root `AGENTS.md` and `.codex/config.toml` for the same workspace guidance.
 
