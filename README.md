@@ -8,6 +8,7 @@ The full profile README lives at [`subkoks/subkoks`](https://github.com/subkoks/
 ![Solana](https://img.shields.io/badge/-Solana-1F1F1F?style=flat-square&logo=solana&logoColor=FF7F0E)
 ![Bash](https://img.shields.io/badge/-Bash-1F1F1F?style=flat-square&logo=gnubash&logoColor=FF7F0E)
 ![macOS](https://img.shields.io/badge/-macOS-1F1F1F?style=flat-square&logo=apple&logoColor=FF7F0E)
+![Swift](https://img.shields.io/badge/-Swift-1F1F1F?style=flat-square&logo=swift&logoColor=FF7F0E)
 ![Linux](https://img.shields.io/badge/-Linux-1F1F1F?style=flat-square&logo=linux&logoColor=FF7F0E)
 ![Git](https://img.shields.io/badge/-Git-1F1F1F?style=flat-square&logo=git&logoColor=FF7F0E)
 
@@ -26,7 +27,7 @@ The full profile README lives at [`subkoks/subkoks`](https://github.com/subkoks/
 
 **Security & agent defense**
 
-- **[hacker-agent](https://github.com/subkoks/hacker-agent)** — Permanent-memory security research toolkit: CVE / CISA KEV feeds, audit checklists, Ghidra MCP bridge.
+- **[hacker-agent](https://github.com/subkoks/hacker-agent)** — Permanent-memory security research and reverse-engineering toolkit: CVE / CISA KEV feeds, audit checklists, Ghidra MCP catalog, Stake Engine math helpers.
 - **[blackterminal-security](https://github.com/subkoks/blackterminal-security)** — Security-engineer skill for AI agents: OWASP Top 10, CWE Top 25, secrets detection.
 - **[prompt-injection-security](https://github.com/subkoks/prompt-injection-security)** — Prompt-injection defense for agent workflows: skeptical-reading skill, offline scanner.
 
@@ -34,9 +35,13 @@ The full profile README lives at [`subkoks/subkoks`](https://github.com/subkoks/
 
 - **[SolanaIdeasLab](https://github.com/subkoks/SolanaIdeasLab)** — Market research, architecture, and master plan, with bots/scanners in **[SolanaIdeasLab-projects](https://github.com/subkoks/SolanaIdeasLab-projects)**.
 
+**Native macOS apps**
+
+- **[BoardVault](https://github.com/subkoks/apple-all-schematic)** — Apple schematic and boardview downloader: macOS desktop app (native SwiftUI) and CLI, sourcing from public Telegram channels.
+- **[BiQuadMonitor](https://github.com/subkoks/BiQuadMonitor)** — Menu-bar monitor and antenna experiment workspace for supported Cudy routers. Swift, unsigned Universal release.
+
 **Automation & tools**
 
-- **[apple-all-schematic](https://github.com/subkoks/apple-all-schematic)** — Bulk Apple schematic / boardview downloader from free Telegram channels (Telethon).
 - **[stake-mirrors-ping](https://github.com/subkoks/stake-mirrors-ping)** — Fastest Stake.com mirror + optimal NordVPN region for lowest latency.
 
 <h2><img alt="Focus" src="https://raw.githubusercontent.com/subkoks/subkoks/main/assets/labels/focus.svg"></h2>
