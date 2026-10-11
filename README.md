@@ -24,7 +24,7 @@ The full profile README lives at [`subkoks/subkoks`](https://github.com/subkoks/
 
 - **[agents-md](https://github.com/subkoks/agents-md)** — Cross-editor agent OS on the GOTCHA framework with a Solana / web3 skill pack and `make install-*` flows.
 - **[BSELA](https://github.com/subkoks/BEST-Self-Enhancement-Learning-AI)** — Local control plane that learns from coding-AI sessions and proposes `AGENTS.md` updates.
-- **multi-agent-system-architecture-codex** — Multi-agent and loop architecture for the BLACK.TERMINAL Codex setup: planner, governor and builder agents, reversible installer. Private repo.
+- **[multi-agent-system-architecture-codex](https://github.com/subkoks/multi-agent-system-architecture-codex)** — Multi-agent and loop architecture for the BLACK.TERMINAL Codex setup: planner, governor and builder agents, reversible installer.
 
 **Security & agent defense**
 
