@@ -15,7 +15,7 @@ The full profile README lives at [`subkoks/subkoks`](https://github.com/subkoks/
 
 <img alt="Contribution activity for @subkoks — orange on black" src="https://raw.githubusercontent.com/subkoks/subkoks/activity/activity.svg" width="100%">
 
-<!-- Generated in subkoks/subkoks by scripts/contrib_heatmap.py, published to its activity branch. Live fallback: https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=subkoks&theme=gruvbox&bg_color=000000&title_color=FF7F0E&icon_color=FF7F0E&text_color=E6E6E6 -->
+<!-- Generated in subkoks/subkoks by scripts/contrib_heatmap.py: GitHub contributions plus local Codex turns and commits (counts only), published to its activity branch. Live fallback: https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=subkoks&theme=gruvbox&bg_color=000000&title_color=FF7F0E&icon_color=FF7F0E&text_color=E6E6E6 -->
 
 <h2><img alt="What I'm building" src="https://raw.githubusercontent.com/subkoks/subkoks/main/assets/labels/what-im-building.svg"></h2>
 
