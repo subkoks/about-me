@@ -15,3 +15,4 @@ Repo-specific guidance for Codex CLI and other agents working in this repository
 - Work on a feature branch and keep one logical change per commit.
 - Keep the repo docs-first and avoid adding application code.
 - Use repo-local `.codex/config.toml` for Codex defaults in this workspace.
+- Run the repository PR sanity checks for any Python, shell, or JSON files you change.
