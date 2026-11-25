@@ -18,3 +18,8 @@ Thumbs.db
 !.codex/
 .codex/*
 !.codex/config.toml
+
+# Local environment overrides
+.env
+.env.*
+!.env.example
